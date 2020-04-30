@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/subSquareGameCentre"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/subtractsq_centre"
+    tools:context=".SubtractSquareGame.SubtractSquareActivities.SubtractSquareGameCentreActivity">
+
+    <Button
+        android:id="@+id/SSScoreBoard"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:background="@drawable/scoreboard_ss"
+        android:onClick="onclickGameScoreBoard"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/myScore"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/NewSSGame"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:background="@drawable/start_new_game_ss"
+        android:onClick="onclickNewGame"
+        app:layout_constraintBottom_toTopOf="@+id/loadGameSS"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/loadGameSS"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:background="@drawable/load_game_ss"
+        android:onClick="onclickLoadGame"
+        app:layout_constraintBottom_toTopOf="@+id/goBackSS"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/myScore"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/myscore_ss"
+        android:onClick="onclickMyScore"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/goBackSS"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:background="@drawable/goback_ss"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="onclickGoBack"/>
+
+</android.support.constraint.ConstraintLayout>

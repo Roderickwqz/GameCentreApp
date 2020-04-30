@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/userName"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/usercentre_background"
+    tools:context=".GameCentreActivity.UserSpecificActivity">
+
+    <TextView
+        android:id="@+id/centreUserName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="38dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/userName"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/gameCentre"
+        android:layout_width="395dp"
+        android:layout_height="550dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="15dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/slidingTileBotton"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="@string/button"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/slidingtile_botton"
+                android:onClick="onClickSlidingTileGame"/>
+
+            <ImageView
+                android:id="@+id/sudokuBotton"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="@string/button"
+                app:srcCompat="@drawable/sudoku_botton"
+                android:onClick="onclickSudokugame"/>
+
+            <ImageView
+                android:id="@+id/subtractBotton"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="@string/button"
+                app:srcCompat="@drawable/subtractsquare"
+                android:onClick="onclickSubtractSquareGame"/>
+
+            <ImageView
+                android:id="@+id/delete_score"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:srcCompat="@drawable/delete_game_data"
+                android:onClick="onclickDeleteAllInfo"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <ImageView
+        android:id="@+id/logout"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="30dp"
+        android:contentDescription="@string/button"
+        android:onClick="onClickLogOut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/exit" />
+
+    <Button
+        android:id="@+id/delete_user"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/delete_user"
+        android:onClick="onclickDeleteUser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/deleteUserText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="5dp"
+        android:text="Delete User"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delete_user" />
+
+</android.support.constraint.ConstraintLayout>

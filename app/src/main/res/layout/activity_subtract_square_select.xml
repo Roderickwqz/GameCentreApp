@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/selectBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/subtractsq_centre"
+    tools:context=".SubtractSquareGame.SubtractSquareActivities.SubtractSquareSelectActivity">
+
+    <TextView
+        android:id="@+id/selectModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="472dp"
+        android:text="@string/please_select_a_mode"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/selectTwoPlayers"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/two_player_game_ss"
+        android:onClick="onclickSelectTwoPlayers"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/selectComputer"
+        android:layout_width="150dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/play_with_pc"
+        android:onClick="onclickSelectComputer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/goBack"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/goback"
+        android:onClick="onclickGoBack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/exit" />
+
+</android.support.constraint.ConstraintLayout>
